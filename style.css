@@ -1,5 +1,5 @@
 body{
-    background-color: #FAF6EA;
+    background-color: white;
     font-family: sans-serif;
 }
 .inline-block{
@@ -24,6 +24,10 @@ nav{
     align-items: center;
 }
 
+header{ 
+    background-color: #FAF6EA;
+}
+
 ul{
     display: flex;
     flex-direction: row-reverse;
@@ -38,6 +42,7 @@ ul{
 .heroimg{
     height: 100%;
     padding: 25px;
+    background-color: #FAF6EA;
 }
 
 .content{
@@ -59,7 +64,7 @@ ul{
 }
 footer{
     margin: 0 auto;
-    background-color:#ffffff;
+    background-color: #FAF6EA;
 }
 
 .footer-logo{
@@ -68,6 +73,7 @@ footer{
 
 footer img{
     width: 232px;
+    
 }
 
 footer ul{
@@ -194,4 +200,51 @@ footer ul{
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 32px;
+
+}
+
+.myWork{
+    padding: 25px;
+}
+.workGrid img{
+    width: 100%;
+    height: auto;
+}
+
+.viewall{
+    text-decoration: underline;
+}
+
+.viewProject{
+    border-radius: 20px;
+    background-color: #133FA2;
+    color: white;
+    padding: 8px 16px 8px 16px;
+    border: none;
+}
+
+.viewProject:hover{
+    background-color:#FAF6EA;
+    color: #133FA2;
+}
+
+footer li:hover{
+    text-decoration: underline;
+
+}
+
+@media only screen and (max-width: 600){
+    .workGrid{
+        flex-direction: column;
+    }
+    .project{
+        width: 100%;
+    }
 }
