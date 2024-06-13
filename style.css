@@ -203,11 +203,15 @@ footer ul{
 }
 
 .workGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-wrap: wrap;
     gap: 32px;
 
+}
+
+.project{
+    min-width: 300px;
+    max-width: 500px;
 }
 
 .myWork{
@@ -240,11 +244,15 @@ footer li:hover{
 
 }
 
-@media only screen and (max-width: 600){
+@media screen and (max-width: 600px){
     .workGrid{
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
     .project{
         width: 100%;
     }
 }
+
+/* I workrd on this with Kelly and we both couldn't get it to work. She said it is ok for me to make the site responsive with Flex instead
+
+*/
